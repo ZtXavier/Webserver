@@ -1,6 +1,5 @@
 #ifndef _TIMER_H_
 #define _TIMER_H_
-#include"log.h"
 #include<unistd.h>
 #include<signal.h>
 #include<sys/types.h>
@@ -21,6 +20,7 @@
 #include<sys/wait.h>
 #include<sys/uio.h>
 #include<time.h>
+#include"log.hpp"
 
 class util_timer;
 

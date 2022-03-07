@@ -1,7 +1,7 @@
 #include<mysql/mysql.h>
 #include<fstream>
-#include"http_conn.h"
-#include "log.h"
+#include"http_conn.hpp"
+#include "log.hpp"
 
 
 // http响应信息
@@ -670,6 +670,11 @@ bool http_conn::read_once()
     bool http_conn::add_content_type()
     {
         return add_response("Connection-Type:%s\r\n","text/html");
+    }
+
+    bool http_conn::add_content(const char * content)
+    {
+        return add_response("%s",content);
     }
 
     bool http_conn::process_write(HTTP_CODE ret)

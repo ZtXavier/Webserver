@@ -1,11 +1,12 @@
 #ifndef _THREAD_POOL_
 #define _THREAD_POOL_
-#include"server.h"
 #include<list>
 #include<pthread.h>
 #include<cstdio>
-#include"sql_conn.h"
-#include"mute.h"
+#include"sql_conn.hpp"
+#include"mute.hpp"
+#include"http_conn.hpp"
+#include"server.hpp"
 
 template<class T>
 class thread_pool
@@ -130,32 +131,32 @@ void thread_pool<T>::run ()
             {
                 if(0 == request->read_once())
                 {
-                    request->improve = 1;
-                    mysql_conn_control mysql_control(&request->mysql,sql_pool);
+                    request->improv = 1;
+                    mysql_conn_control mysql_control(&request->sql,sql_pool);
                     request->process();
                 }
                 else
                 {
-                    request->improve = 1;
-                    request->timer_fg = 1;
+                    request->improv = 1;
+                    request->timer_flag = 1;
                 }
             }
             else
             {
                 if(request->write())
                 {
-                    request->improve = 1;
+                    request->improv = 1;
                 }
                 else
                 {
-                    request->improve = 1;
-                    request->timer_fg = 1;
+                    request->improv = 1;
+                    request->timer_flag = 1;
                 }
             }
         }
         else
         {
-            mysql_conn_control  mqlcon(&request->mysql,sql_pool);
+            mysql_conn_control  mqlcon(&request->sql,sql_pool);
             request->process();
         }
     }

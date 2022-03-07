@@ -1,12 +1,12 @@
-#include"server.h"
-#include"config.h"
+#include"server.hpp"
+#include"config.hpp"
 
 server_config::server_config()
 {
     // 端口号
     PORT = 8000;
 
-    // 日志写入方式
+    // 日志
     WRITE_LOG = 0;
 
     // epoll触发方式 LT默认
@@ -19,10 +19,10 @@ server_config::server_config()
     opt_linger = 0;
 
     // 数据库连接池数量
-    sql_num = 0;
+    sql_num = 8;
 
     // 线程池线程数量
-    thread_num = 0;
+    thread_num = 8;
 
     // 日志开关
     close_log = 0;

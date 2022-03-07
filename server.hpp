@@ -7,7 +7,7 @@
 #include<mysql/mysql.h>
 #include<string.h>
 #include<pthread.h>
-#include<string>
+#include<string.h>
 #include<unistd.h>
 #include<signal.h>
 #include<sys/types.h>
@@ -23,21 +23,24 @@
 #include<stdarg.h>
 #include<sys/wait.h>
 #include<sys/uio.h>
-#include<time.h>
-#include<map>
+#include<sys/time.h>
 #include<sys/mman.h>
 #include<sys/wait.h>
-#include"thread_pool.h"
-#include"http_conn.h"
-#include"sql_conn.h"
-#include"timer.h"
+#include<map>
+#include<vector>
+#include"http_conn.hpp"
+#include"timer.hpp"
+#include"thread_pool.hpp"
+#include"sql_conn.hpp"
+#include"log.hpp"
 
-void my_error(const char * err_string,int line)
-{
-    fprintf(stderr,"line:%d",line);
-    perror(err_string);
-    exit(1);
-}
+
+// void my_error(const char * err_string,int line)
+// {
+//     fprintf(stderr,"line:%d",line);
+//     perror(err_string);
+//     exit(1);
+// }
 
 const int MAXNUM_FD = 65536;                //最大文件描述符
 const int MAX_EVENT_NUMBER = 10000;    //最大事件数
@@ -45,7 +48,7 @@ const int TIMESLOT = 5;                            // 最小时间单位
 
 class my_Webserver
 {
-    public:
+public:
     my_Webserver();
     ~my_Webserver();
 
@@ -83,8 +86,6 @@ class my_Webserver
     void deal_read(int sockfd);
 
     void deal_write(int sockfd);
-    
-    void deal_thread(int sockfd);
 
     int m_port;
 

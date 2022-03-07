@@ -1,10 +1,37 @@
 #ifndef _LOG_
 #define _LOG_
 
-#include"server.h"
+#include<stdio.h>
+#include<stdlib.h>
+#include<error.h>
+#include<mysql/mysql.h>
+#include<string.h>
+#include<pthread.h>
+#include<string.h>
+#include<unistd.h>
+#include<signal.h>
+#include<sys/types.h>
+#include<sys/epoll.h>
+#include<errno.h>
+#include<fcntl.h>
+#include<sys/socket.h>
+#include<netinet/in.h>
+#include<arpa/inet.h>
+#include<assert.h>
+#include<sys/stat.h>
+#include<sys/mman.h>
 #include<stdarg.h>
-#include"block_queue.h"
-#include"mute.h"
+#include<sys/wait.h>
+#include<sys/uio.h>
+#include<sys/time.h>
+#include<sys/mman.h>
+#include<sys/wait.h>
+#include<map>
+#include<vector>
+#include<stdarg.h>
+#include"sql_conn.hpp"
+#include"block_queue.hpp"
+#include"mute.hpp"
 
 
 class Log

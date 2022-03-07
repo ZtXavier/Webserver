@@ -1,4 +1,6 @@
-#include"server.h"
+#include"server.hpp"
+#include"http_conn.hpp"
+
 
 my_Webserver::my_Webserver()
 {
@@ -281,7 +283,7 @@ bool my_Webserver::deal_signal(bool &timeout,bool &stop_server)
     return true;
 }
 
-void my_Webserver::deal_thread(int sockfd)
+void my_Webserver::deal_read(int sockfd)
 {
     util_timer *timer = users_timer[sockfd].timer;
 

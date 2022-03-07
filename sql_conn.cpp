@@ -1,47 +1,7 @@
-#ifndef _MYSQL_CONN
-#define _MYSQL_CONN
-#include<iostream>
-#include<list>
-#include<stdio.h>
-#include<stdlib.h>
-#include<error.h>
-#include<mysql/mysql.h>
-#include<string.h>
-#include<pthread.h>
-#include"mute.h"
-#include"server.h"
+#include"server.hpp"
+#include "sql_conn.hpp"
+#include"log.hpp"
 
-class mysql_conn
-{
-public:
-        mysql_conn();
-        ~mysql_conn();
-        MYSQL *ret_conn();
-        int numoffree();
-        void destroy_pool();
-        void init(std::string my_address,int my_port,std::string user_name,std::string user_passwd,std::string datadb_name,int max_conn,int close_log);
-        bool deleteconn(MYSQL *conn);
-
-        std::string my_address;
-        std::string user_name;
-        std::string user_passwd;
-        std::string datadb_name;
-        int my_port;
-        lock_mutex locker;
-
-        static mysql_conn *GetInstance();
-
-
-private:
-        int max_conn;
-        int have_conn;
-        int free_conn;
-        int switch_log;
-        std::list<MYSQL*> connlist;
-
-
-    
-};
 
 // 构造函数
 mysql_conn::mysql_conn()
@@ -60,7 +20,7 @@ void mysql_conn::init(std::string address,int port,std::string user_name,std::st
     this->user_passwd = user_passwd;
     this->user_name = user_name;
     this->datadb_name = datadb_name;
-    this->switch_log = log;
+    this->m_close_log = log;
 
     for(int i = 0; i < max_conn;i++)
     {
@@ -68,11 +28,13 @@ void mysql_conn::init(std::string address,int port,std::string user_name,std::st
 
         if((conn = mysql_init(conn)) == NULL)
         {
+            LOG_ERROR("mysql error 1");
             exit(1);
         }
 
         if((conn = mysql_real_connect(conn,address.c_str(),user_name.c_str(),user_passwd.c_str(),datadb_name.c_str(),port,NULL,0)) == NULL)
         {
+            LOG_ERROR("mysql error 2");
             exit(1);
         }
         connlist.push_back(conn);               //如果链接成功则将其放入连接队列中
@@ -114,6 +76,7 @@ int mysql_conn::numoffree()
 
 void mysql_conn::destroy_pool()
 {
+    locker.lock();
     MYSQL *conn = NULL;
     if(connlist.size() > 0)
     {
@@ -127,7 +90,7 @@ void mysql_conn::destroy_pool()
         free_conn = 0;
         connlist.clear();         // 释放list类型的链表
     }
-
+    locker.unlock();
 }
 
 
@@ -152,19 +115,9 @@ mysql_conn::~mysql_conn()
 }
 
 
-class mysql_conn_control
-{
-public:
-        mysql_conn_control(MYSQL **sql,mysql_conn *pool);
-        ~mysql_conn_control();
-private:
-        MYSQL *mql;
-        mysql_conn * mql_pool;
-};
-
-
 mysql_conn_control::mysql_conn_control(MYSQL **sql,mysql_conn *pool)
 {
+    *sql = pool->ret_conn();
     mql = *sql;
     mql_pool = pool;
 }
@@ -173,6 +126,3 @@ mysql_conn_control::~mysql_conn_control()
 {
     mql_pool->deleteconn(mql);
 }
-
-
-#endif

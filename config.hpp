@@ -1,15 +1,15 @@
 #ifndef _CONFIG_H_
 #define _CONFIG_H_
 
-#include"server.h"
+#include"server.hpp"
 
 class server_config
 {
+    public:
     server_config();
-    ~server_config();
+    ~server_config(){};
 
     void parse_arg(int argc,char* argv[]);
-
     // 端口号
     int PORT;
 
@@ -38,8 +38,4 @@ class server_config
     int actor_model;
 
 };
-
-
-
-
 #endif
