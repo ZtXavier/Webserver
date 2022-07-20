@@ -4,7 +4,7 @@
 server_config::server_config()
 {
     // 端口号
-    PORT = 8000;
+    PORT = 8888;
 
     // 日志
     WRITE_LOG = 0;

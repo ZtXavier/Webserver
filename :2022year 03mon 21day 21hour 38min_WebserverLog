@@ -1,0 +1,166 @@
+2022-03-21-21:38:55.668365 [info]:timer tick
+2022-03-21-21:38:58.865917 [info]:deal with the client(127.0.0.1)
+2022-03-21-21:38:58.934750 [info]:adjust timer once
+2022-03-21-21:38:58.934817 [info]:GET / HTTP/1.1
+2022-03-21-21:38:58.935214 [info]:Host: 127.0.0.1:8000
+2022-03-21-21:38:58.935231 [info]:Connection: keep-alive
+2022-03-21-21:38:58.935244 [info]:Cache-Control: max-age=0
+2022-03-21-21:38:58.935253 [info]:UNKNOW HEADER: Cache-Control: max-age=0
+2022-03-21-21:38:58.935262 [info]:sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="99", "Google Chrome";v="99"
+2022-03-21-21:38:58.935271 [info]:UNKNOW HEADER: sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="99", "Google Chrome";v="99"
+2022-03-21-21:38:58.935280 [info]:sec-ch-ua-mobile: ?0
+2022-03-21-21:38:58.935289 [info]:UNKNOW HEADER: sec-ch-ua-mobile: ?0
+2022-03-21-21:38:58.935298 [info]:sec-ch-ua-platform: "Linux"
+2022-03-21-21:38:58.935307 [info]:UNKNOW HEADER: sec-ch-ua-platform: "Linux"
+2022-03-21-21:38:58.935316 [info]:Upgrade-Insecure-Requests: 1
+2022-03-21-21:38:58.935324 [info]:UNKNOW HEADER: Upgrade-Insecure-Requests: 1
+2022-03-21-21:38:58.935334 [info]:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36
+2022-03-21-21:38:58.935344 [info]:UNKNOW HEADER: User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36
+2022-03-21-21:38:58.935354 [info]:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+2022-03-21-21:38:58.935363 [info]:UNKNOW HEADER: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+2022-03-21-21:38:58.935375 [info]:Sec-Fetch-Site: none
+2022-03-21-21:38:58.935384 [info]:UNKNOW HEADER: Sec-Fetch-Site: none
+2022-03-21-21:38:58.935395 [info]:Sec-Fetch-Mode: navigate
+2022-03-21-21:38:58.935404 [info]:UNKNOW HEADER: Sec-Fetch-Mode: navigate
+2022-03-21-21:38:58.935412 [info]:Sec-Fetch-User: ?1
+2022-03-21-21:38:58.935421 [info]:UNKNOW HEADER: Sec-Fetch-User: ?1
+2022-03-21-21:38:58.935430 [info]:Sec-Fetch-Dest: document
+2022-03-21-21:38:58.935442 [info]:UNKNOW HEADER: Sec-Fetch-Dest: document
+2022-03-21-21:38:58.935454 [info]:Accept-Encoding: gzip, deflate, br
+2022-03-21-21:38:58.935464 [info]:UNKNOW HEADER: Accept-Encoding: gzip, deflate, br
+2022-03-21-21:38:58.935478 [info]:Accept-Language: zh-CN,zh;q=0.9
+2022-03-21-21:38:58.935488 [info]:UNKNOW HEADER: Accept-Language: zh-CN,zh;q=0.9
+2022-03-21-21:38:58.935501 [info]:
+2022-03-21-21:38:58.935541 [info]:request:HTTP/1.1 200 OK
+
+2022-03-21-21:38:58.935643 [info]:send data to client(127.0.0.1)
+2022-03-21-21:38:58.935667 [info]:adjust timer once
+2022-03-21-21:39:00.668652 [info]:timer tick
+2022-03-21-21:39:05.668945 [info]:timer tick
+2022-03-21-21:39:10.669092 [info]:timer tick
+2022-03-21-21:39:15.669650 [info]:timer tick
+2022-03-21-21:39:15.698094 [info]:deal with the client(127.0.0.1)
+2022-03-21-21:39:15.698281 [info]:adjust timer once
+2022-03-21-21:39:15.698433 [info]:GET /favicon.ico HTTP/1.1
+2022-03-21-21:39:15.698470 [info]:Host: 127.0.0.1:8000
+2022-03-21-21:39:15.698483 [info]:Connection: keep-alive
+2022-03-21-21:39:15.698499 [info]:sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="99", "Google Chrome";v="99"
+2022-03-21-21:39:15.698527 [info]:UNKNOW HEADER: sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="99", "Google Chrome";v="99"
+2022-03-21-21:39:15.698553 [info]:sec-ch-ua-mobile: ?0
+2022-03-21-21:39:15.698576 [info]:UNKNOW HEADER: sec-ch-ua-mobile: ?0
+2022-03-21-21:39:15.698598 [info]:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36
+2022-03-21-21:39:15.698618 [info]:UNKNOW HEADER: User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36
+2022-03-21-21:39:15.698638 [info]:sec-ch-ua-platform: "Linux"
+2022-03-21-21:39:15.698652 [info]:UNKNOW HEADER: sec-ch-ua-platform: "Linux"
+2022-03-21-21:39:15.698661 [info]:Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2022-03-21-21:39:15.698696 [info]:UNKNOW HEADER: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2022-03-21-21:39:15.698728 [info]:Sec-Fetch-Site: same-origin
+2022-03-21-21:39:15.698742 [info]:UNKNOW HEADER: Sec-Fetch-Site: same-origin
+2022-03-21-21:39:15.698754 [info]:Sec-Fetch-Mode: no-cors
+2022-03-21-21:39:15.698763 [info]:UNKNOW HEADER: Sec-Fetch-Mode: no-cors
+2022-03-21-21:39:15.698774 [info]:Sec-Fetch-Dest: image
+2022-03-21-21:39:15.698785 [info]:UNKNOW HEADER: Sec-Fetch-Dest: image
+2022-03-21-21:39:15.698797 [info]:Referer: http://127.0.0.1:8000/
+2022-03-21-21:39:15.698807 [info]:UNKNOW HEADER: Referer: http://127.0.0.1:8000/
+2022-03-21-21:39:15.698826 [info]:Accept-Encoding: gzip, deflate, br
+2022-03-21-21:39:15.698850 [info]:UNKNOW HEADER: Accept-Encoding: gzip, deflate, br
+2022-03-21-21:39:15.698863 [info]:Accept-Language: zh-CN,zh;q=0.9
+2022-03-21-21:39:15.698883 [info]:UNKNOW HEADER: Accept-Language: zh-CN,zh;q=0.9
+2022-03-21-21:39:15.698895 [info]:
+2022-03-21-21:39:20.670005 [info]:timer tick
+2022-03-21-21:39:25.670261 [info]:timer tick
+2022-03-21-21:39:30.670712 [info]:timer tick
+2022-03-21-21:39:35.671022 [info]:timer tick
+2022-03-21-21:39:40.671100 [info]:timer tick
+2022-03-21-21:39:45.671426 [info]:timer tick
+2022-03-21-21:39:50.671724 [info]:timer tick
+2022-03-21-21:39:55.671850 [info]:timer tick
+2022-03-21-21:40:00.672073 [info]:timer tick
+2022-03-21-21:40:05.672393 [info]:timer tick
+2022-03-21-21:40:10.672529 [info]:timer tick
+2022-03-21-21:40:15.673061 [info]:timer tick
+2022-03-21-21:40:20.673319 [info]:timer tick
+2022-03-21-21:40:25.673853 [info]:timer tick
+2022-03-21-21:40:30.674151 [info]:timer tick
+2022-03-21-21:40:35.674544 [info]:timer tick
+2022-03-21-21:40:40.675030 [info]:timer tick
+2022-03-21-21:40:45.675738 [info]:timer tick
+2022-03-21-21:40:50.676048 [info]:timer tick
+2022-03-21-21:40:55.676648 [info]:timer tick
+2022-03-21-21:41:00.677151 [info]:timer tick
+2022-03-21-21:41:05.677480 [info]:timer tick
+2022-03-21-21:41:10.677973 [info]:timer tick
+2022-03-21-21:41:15.678343 [info]:timer tick
+2022-03-21-21:41:20.678733 [info]:timer tick
+2022-03-21-21:41:25.679037 [info]:timer tick
+2022-03-21-21:41:30.679338 [info]:timer tick
+2022-03-21-21:41:35.679430 [info]:timer tick
+2022-03-21-21:41:40.679695 [info]:timer tick
+2022-03-21-21:41:45.679887 [info]:timer tick
+2022-03-21-21:41:50.680217 [info]:timer tick
+2022-03-21-21:41:55.680501 [info]:timer tick
+2022-03-21-21:42:00.680808 [info]:timer tick
+2022-03-21-21:42:05.681018 [info]:timer tick
+2022-03-21-21:42:10.681493 [info]:timer tick
+2022-03-21-21:42:15.681766 [info]:timer tick
+2022-03-21-21:42:20.682049 [info]:timer tick
+2022-03-21-21:42:25.682306 [info]:timer tick
+2022-03-21-21:42:30.682408 [info]:timer tick
+2022-03-21-21:42:35.682460 [info]:timer tick
+2022-03-21-21:42:40.682725 [info]:timer tick
+2022-03-21-21:42:45.682967 [info]:timer tick
+2022-03-21-21:42:50.683283 [info]:timer tick
+2022-03-21-21:42:55.683872 [info]:timer tick
+2022-03-21-21:43:00.684158 [info]:timer tick
+2022-03-21-21:43:05.684235 [info]:timer tick
+2022-03-21-21:43:10.684551 [info]:timer tick
+2022-03-21-21:43:15.684885 [info]:timer tick
+2022-03-21-21:43:20.685186 [info]:timer tick
+2022-03-21-21:43:25.685493 [info]:timer tick
+2022-03-21-21:43:30.685812 [info]:timer tick
+2022-03-21-21:43:35.686164 [info]:timer tick
+2022-03-21-21:43:40.686419 [info]:timer tick
+2022-03-21-21:43:45.686745 [info]:timer tick
+2022-03-21-21:43:50.687040 [info]:timer tick
+2022-03-21-21:43:55.687326 [info]:timer tick
+2022-03-21-21:44:00.687614 [info]:timer tick
+2022-03-21-21:44:05.688153 [info]:timer tick
+2022-03-21-21:44:10.688382 [info]:timer tick
+2022-03-21-21:44:15.688584 [info]:timer tick
+2022-03-21-21:44:20.688823 [info]:timer tick
+2022-03-21-21:44:25.689074 [info]:timer tick
+2022-03-21-21:44:30.689398 [info]:timer tick
+2022-03-21-21:44:35.689582 [info]:timer tick
+2022-03-21-21:44:40.689747 [info]:timer tick
+2022-03-21-21:44:45.689850 [info]:timer tick
+2022-03-21-21:44:50.690187 [info]:timer tick
+2022-03-21-21:44:55.690395 [info]:timer tick
+2022-03-21-21:45:00.690629 [info]:timer tick
+2022-03-21-21:45:05.690946 [info]:timer tick
+2022-03-21-21:45:10.691437 [info]:timer tick
+2022-03-21-21:45:15.691695 [info]:timer tick
+2022-03-21-21:45:20.691852 [info]:timer tick
+2022-03-21-21:45:25.692127 [info]:timer tick
+2022-03-21-21:45:30.692433 [info]:timer tick
+2022-03-21-21:45:35.692704 [info]:timer tick
+2022-03-21-21:45:40.693047 [info]:timer tick
+2022-03-21-21:45:45.693334 [info]:timer tick
+2022-03-21-21:45:50.693460 [info]:timer tick
+2022-03-21-21:45:55.693758 [info]:timer tick
+2022-03-21-21:46:00.693944 [info]:timer tick
+2022-03-21-21:46:05.694169 [info]:timer tick
+2022-03-21-21:46:10.694450 [info]:timer tick
+2022-03-21-21:46:15.694792 [info]:timer tick
+2022-03-21-21:46:20.695046 [info]:timer tick
+2022-03-21-21:46:25.695358 [info]:timer tick
+2022-03-21-21:46:30.695661 [info]:timer tick
+2022-03-21-21:46:35.696017 [info]:timer tick
+2022-03-21-21:46:40.696326 [info]:timer tick
+2022-03-21-21:46:45.696671 [info]:timer tick
+2022-03-21-21:46:50.697002 [info]:timer tick
+2022-03-21-21:46:55.697282 [info]:timer tick
+2022-03-21-21:47:00.697620 [info]:timer tick
+2022-03-21-21:47:05.697961 [info]:timer tick
+2022-03-21-21:47:10.698247 [info]:timer tick
+2022-03-21-21:47:15.698524 [info]:timer tick
+2022-03-21-21:47:20.698769 [info]:timer tick

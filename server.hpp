@@ -35,12 +35,12 @@
 #include"log.hpp"
 
 
-// void my_error(const char * err_string,int line)
-// {
-//     fprintf(stderr,"line:%d",line);
-//     perror(err_string);
-//     exit(1);
-// }
+void my_error(const char * err_string,int line)
+{
+    fprintf(stderr,"line:%d",line);
+    perror(err_string);
+    exit(1);
+}
 
 const int MAXNUM_FD = 65536;                //最大文件描述符
 const int MAX_EVENT_NUMBER = 10000;    //最大事件数
@@ -106,7 +106,9 @@ public:
 
     epoll_event events[MAX_EVENT_NUMBER];
     int m_listenfd;
+    // 优雅关闭
     int m_opt_linger;
+    // ET LT 模式切换
     int m_TRIGMode;
     // 监听模式
     int m_LISTENMode;

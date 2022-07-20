@@ -1,0 +1,90 @@
+2022-03-21-21:36:32.715640 [info]:timer tick
+2022-03-21-21:36:32.918856 [info]:deal with the client(127.0.0.1)
+2022-03-21-21:36:32.918906 [info]:adjust timer once
+2022-03-21-21:36:32.918937 [info]:GET / HTTP/1.1
+2022-03-21-21:36:32.918972 [info]:Host: 127.0.0.1:8000
+2022-03-21-21:36:32.918984 [info]:Connection: keep-alive
+2022-03-21-21:36:32.918995 [info]:Cache-Control: max-age=0
+2022-03-21-21:36:32.919006 [info]:UNKNOW HEADER: Cache-Control: max-age=0
+2022-03-21-21:36:32.919016 [info]:sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="99", "Google Chrome";v="99"
+2022-03-21-21:36:32.919026 [info]:UNKNOW HEADER: sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="99", "Google Chrome";v="99"
+2022-03-21-21:36:32.919036 [info]:sec-ch-ua-mobile: ?0
+2022-03-21-21:36:32.919046 [info]:UNKNOW HEADER: sec-ch-ua-mobile: ?0
+2022-03-21-21:36:32.919058 [info]:sec-ch-ua-platform: "Linux"
+2022-03-21-21:36:32.919068 [info]:UNKNOW HEADER: sec-ch-ua-platform: "Linux"
+2022-03-21-21:36:32.919078 [info]:Upgrade-Insecure-Requests: 1
+2022-03-21-21:36:32.919087 [info]:UNKNOW HEADER: Upgrade-Insecure-Requests: 1
+2022-03-21-21:36:32.919098 [info]:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36
+2022-03-21-21:36:32.919108 [info]:UNKNOW HEADER: User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36
+2022-03-21-21:36:32.919119 [info]:Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+2022-03-21-21:36:32.919129 [info]:UNKNOW HEADER: Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+2022-03-21-21:36:32.919141 [info]:Sec-Fetch-Site: none
+2022-03-21-21:36:32.919151 [info]:UNKNOW HEADER: Sec-Fetch-Site: none
+2022-03-21-21:36:32.919161 [info]:Sec-Fetch-Mode: navigate
+2022-03-21-21:36:32.919171 [info]:UNKNOW HEADER: Sec-Fetch-Mode: navigate
+2022-03-21-21:36:32.919181 [info]:Sec-Fetch-User: ?1
+2022-03-21-21:36:32.919191 [info]:UNKNOW HEADER: Sec-Fetch-User: ?1
+2022-03-21-21:36:32.919201 [info]:Sec-Fetch-Dest: document
+2022-03-21-21:36:32.919211 [info]:UNKNOW HEADER: Sec-Fetch-Dest: document
+2022-03-21-21:36:32.919221 [info]:Accept-Encoding: gzip, deflate, br
+2022-03-21-21:36:32.919231 [info]:UNKNOW HEADER: Accept-Encoding: gzip, deflate, br
+2022-03-21-21:36:32.919241 [info]:Accept-Language: zh-CN,zh;q=0.9
+2022-03-21-21:36:32.919251 [info]:UNKNOW HEADER: Accept-Language: zh-CN,zh;q=0.9
+2022-03-21-21:36:32.919262 [info]:
+2022-03-21-21:36:32.919288 [info]:request:HTTP/1.1 200 OK
+
+2022-03-21-21:36:32.919334 [info]:send data to client(127.0.0.1)
+2022-03-21-21:36:32.919347 [info]:adjust timer once
+2022-03-21-21:36:37.715746 [info]:timer tick
+2022-03-21-21:36:42.715804 [info]:timer tick
+2022-03-21-21:36:47.716077 [info]:timer tick
+2022-03-21-21:36:47.748123 [info]:deal with the client(127.0.0.1)
+2022-03-21-21:36:47.748166 [info]:adjust timer once
+2022-03-21-21:36:47.748199 [info]:GET /favicon.ico HTTP/1.1
+2022-03-21-21:36:47.748222 [info]:Host: 127.0.0.1:8000
+2022-03-21-21:36:47.748236 [info]:Connection: keep-alive
+2022-03-21-21:36:47.748248 [info]:sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="99", "Google Chrome";v="99"
+2022-03-21-21:36:47.748259 [info]:UNKNOW HEADER: sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="99", "Google Chrome";v="99"
+2022-03-21-21:36:47.748270 [info]:sec-ch-ua-mobile: ?0
+2022-03-21-21:36:47.748281 [info]:UNKNOW HEADER: sec-ch-ua-mobile: ?0
+2022-03-21-21:36:47.748293 [info]:User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36
+2022-03-21-21:36:47.748304 [info]:UNKNOW HEADER: User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36
+2022-03-21-21:36:47.748315 [info]:sec-ch-ua-platform: "Linux"
+2022-03-21-21:36:47.748326 [info]:UNKNOW HEADER: sec-ch-ua-platform: "Linux"
+2022-03-21-21:36:47.748337 [info]:Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2022-03-21-21:36:47.748357 [info]:UNKNOW HEADER: Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+2022-03-21-21:36:47.748370 [info]:Sec-Fetch-Site: same-origin
+2022-03-21-21:36:47.748381 [info]:UNKNOW HEADER: Sec-Fetch-Site: same-origin
+2022-03-21-21:36:47.748392 [info]:Sec-Fetch-Mode: no-cors
+2022-03-21-21:36:47.748402 [info]:UNKNOW HEADER: Sec-Fetch-Mode: no-cors
+2022-03-21-21:36:47.748413 [info]:Sec-Fetch-Dest: image
+2022-03-21-21:36:47.748424 [info]:UNKNOW HEADER: Sec-Fetch-Dest: image
+2022-03-21-21:36:47.748436 [info]:Referer: http://127.0.0.1:8000/
+2022-03-21-21:36:47.748446 [info]:UNKNOW HEADER: Referer: http://127.0.0.1:8000/
+2022-03-21-21:36:47.748457 [info]:Accept-Encoding: gzip, deflate, br
+2022-03-21-21:36:47.748468 [info]:UNKNOW HEADER: Accept-Encoding: gzip, deflate, br
+2022-03-21-21:36:47.748478 [info]:Accept-Language: zh-CN,zh;q=0.9
+2022-03-21-21:36:47.748489 [info]:UNKNOW HEADER: Accept-Language: zh-CN,zh;q=0.9
+2022-03-21-21:36:47.748500 [info]:
+2022-03-21-21:36:52.716211 [info]:timer tick
+2022-03-21-21:36:57.716352 [info]:timer tick
+2022-03-21-21:37:02.716422 [info]:timer tick
+2022-03-21-21:37:07.716513 [info]:timer tick
+2022-03-21-21:37:12.716573 [info]:timer tick
+2022-03-21-21:37:17.716670 [info]:timer tick
+2022-03-21-21:37:22.716762 [info]:timer tick
+2022-03-21-21:37:27.716829 [info]:timer tick
+2022-03-21-21:37:32.716882 [info]:timer tick
+2022-03-21-21:37:37.716969 [info]:timer tick
+2022-03-21-21:37:42.717001 [info]:timer tick
+2022-03-21-21:37:47.717062 [info]:timer tick
+2022-03-21-21:37:52.717110 [info]:timer tick
+2022-03-21-21:37:57.717196 [info]:timer tick
+2022-03-21-21:38:02.717245 [info]:timer tick
+2022-03-21-21:38:07.717290 [info]:timer tick
+2022-03-21-21:38:12.717341 [info]:timer tick
+2022-03-21-21:38:17.717405 [info]:timer tick
+2022-03-21-21:38:22.717492 [info]:timer tick
+2022-03-21-21:38:27.717576 [info]:timer tick
+2022-03-21-21:38:32.717639 [info]:timer tick
+2022-03-21-21:38:37.717714 [info]:timer tick

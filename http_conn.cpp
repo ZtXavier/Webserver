@@ -726,7 +726,7 @@ bool http_conn::read_once()
                 }
                 else
                 {
-                    const char * ok_string = "<html><body><body></html>";
+                    const char * ok_string = "<html><body></body></html>";
                     add_headers(strlen(ok_string));
                     if(!add_content(ok_string))
                     {

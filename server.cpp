@@ -9,7 +9,7 @@ my_Webserver::my_Webserver()
     // 根目录路径
         char server_path[256];
         getcwd(server_path,256);
-        char root[6] = "/root";
+        char root[12] = "/html_learn";
         m_root = (char *)malloc(strlen(server_path) + strlen(root) + 1);
         strcpy(m_root,server_path);
         strcat(m_root,root);
@@ -195,7 +195,7 @@ void my_Webserver::deal_timer(util_timer *timer,int sockfd)
     {
         uts.m_timer_lst.del_timer(timer);
     }
-    LOG_INFO("Close fd : %d",users_timer[sockfd].sockfd);
+    LOG_INFO("close fd %d",users_timer[sockfd].sockfd);
 }
 
 // 接受客户端的请求
@@ -282,7 +282,7 @@ bool my_Webserver::deal_signal(bool &timeout,bool &stop_server)
     }
     return true;
 }
-
+// 
 void my_Webserver::deal_read(int sockfd)
 {
     util_timer *timer = users_timer[sockfd].timer;
@@ -303,9 +303,11 @@ void my_Webserver::deal_read(int sockfd)
                 if(1 == users[sockfd].timer_flag)
                 {
                     deal_timer(timer,sockfd);
-                    users[sockfd].improv = 0;
-                    break;
+                    users[sockfd].timer_flag = 0;
                 }
+                users[sockfd].improv = 0;
+                break;
+
             }
         }
     }

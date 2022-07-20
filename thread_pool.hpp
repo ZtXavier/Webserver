@@ -125,7 +125,8 @@ void thread_pool<T>::run ()
         {
             continue;
         }
-        if(1 == m_actor_model)    //
+        // reactor
+        if(1 == m_actor_model)    // 模型
         {
             if(0 == request->m_state)
             {
@@ -154,6 +155,7 @@ void thread_pool<T>::run ()
                 }
             }
         }
+        // proactor
         else
         {
             mysql_conn_control  mqlcon(&request->sql,sql_pool);

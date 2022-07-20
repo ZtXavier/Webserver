@@ -69,7 +69,8 @@
     "cfenv": "cpp",
     "assert.h": "c",
     "my_assert.h": "c",
-    "wchar.h": "c"
+    "wchar.h": "c",
+    "*.ipp": "cpp"
   },
   "C_Cpp_Runner.cCompilerPath": "/usr/bin/gcc",
   "C_Cpp_Runner.cppCompilerPath": "/usr/bin/g++",

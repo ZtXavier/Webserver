@@ -60,7 +60,7 @@ void sort_timer_lst::adjust_timer(util_timer *timer)
         head = head->next;
         head->prev = NULL;
         timer->next = NULL;
-        add_timer(head,timer->next);
+        add_timer(timer,head);
     }
     else
     {

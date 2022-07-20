@@ -29,6 +29,7 @@
 #include<map>
 #include<vector>
 #include"mute.hpp"
+// 使用阻塞队列，类模板来实现
 template<class T>
 class block_queue
 {
